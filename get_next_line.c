@@ -25,7 +25,7 @@ char *get_next_line(int fd)
       free(line);
       return (NULL);
     }
-    line = ft_strjoin(line, line_tmp);
+    line = ft_strjoin_free(line, line_tmp);
   }
   return (line);
 }
